@@ -9,16 +9,20 @@
     <LinearLayout
         android:layout_width="368dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:orientation="vertical"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteY="429dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
 
         <TextView
             android:id="@+id/questionText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:editable="true"
             android:text="TextView"
             tools:layout_editor_absoluteX="8dp"
             tools:layout_editor_absoluteY="273dp" />
@@ -32,26 +36,34 @@
 
             <Button
                 android:id="@+id/button8"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
+                android:layout_width="151dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:editable="true"
                 android:text="1" />
 
             <Button
                 android:id="@+id/button7"
                 android:layout_width="150dp"
-                android:layout_height="wrap_content"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:editable="true"
                 android:text="2" />
 
             <Button
                 android:id="@+id/button2"
                 android:layout_width="150dp"
-                android:layout_height="wrap_content"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:editable="true"
                 android:text="3" />
 
             <Button
                 android:id="@+id/button"
                 android:layout_width="150dp"
-                android:layout_height="wrap_content"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:editable="true"
                 android:text="4" />
         </GridLayout>
     </LinearLayout>
