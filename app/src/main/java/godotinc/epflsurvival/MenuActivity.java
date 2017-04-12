@@ -1,5 +1,6 @@
 package godotinc.epflsurvival;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -14,7 +15,7 @@ public class MenuActivity extends AppCompatActivity {
         Button buttonOne = (Button) findViewById(R.id.button3);
         buttonOne.setOnClickListener(new Button.OnClickListener() {
             public void onClick(View v) {
-                
+                startActivity(new Intent(v.getContext(), QuestionActivity.class));
             }
         });
     }
