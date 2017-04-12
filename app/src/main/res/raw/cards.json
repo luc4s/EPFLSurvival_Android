@@ -1,0 +1,974 @@
+﻿{
+  "cards" : {
+    "-KdX3zLqASDya9UZENR4" : {
+      "answers" : [ {
+        "answer" : "Oui, evidemment",
+        "changes" : {
+          "academics" : -25,
+          "finances" : -10,
+          "health" : 0,
+          "social" : 35
+        },
+        "suite" : ""
+      }, {
+        "answer" : "Non, j'adore la SHS",
+        "changes" : {
+          "academics" : 25,
+          "finances" : 0,
+          "health" : 0,
+          "social" : -25
+        },
+        "suite" : ""
+      } ],
+      "date" : -1,
+      "image" : "",
+      "period" : -1,
+      "question" : "Nous sommes Mardi, tu as SHS à 17h, tes potes en deuxieme années vont à Sat, les rejoins-tu?",
+      "ranges" : {
+        "academics" : [ 0, 100 ],
+        "finances" : [ 0, 100 ],
+        "health" : [ 0, 100 ],
+        "social" : [ 0, 100 ]
+      },
+      "section" : -1,
+      "tag" : ""
+    },
+    "-KdX4DdBZMQqSX6SsifW" : {
+      "answers" : [ {
+        "answer" : "À",
+        "changes" : {
+          "academics" : 0,
+          "finances" : 0,
+          "health" : 0,
+          "social" : 25
+        },
+        "suite" : ""
+      }, {
+        "answer" : "Au",
+        "changes" : {
+          "academics" : 0,
+          "finances" : 0,
+          "health" : 0,
+          "social" : -100
+        },
+        "suite" : ""
+      } ],
+      "date" : -1,
+      "image" : "",
+      "period" : -1,
+      "question" : "Quizz : Tu vas à Sat ou au Sat?",
+      "ranges" : {
+        "academics" : [ 0, 100 ],
+        "finances" : [ 0, 100 ],
+        "health" : [ 0, 100 ],
+        "social" : [ 0, 100 ]
+      },
+      "section" : -1,
+      "tag" : ""
+    },
+    "-Kdanan9btF531qHsCOV" : {
+      "answers" : [ {
+        "answer" : "Du Bio",
+        "changes" : {
+          "academics" : 0,
+          "finances" : -12,
+          "health" : 12,
+          "social" : 0
+        },
+        "comment" : "Bien mais cher!",
+        "suite" : ""
+      }, {
+        "answer" : "Vite fait mal fait",
+        "changes" : {
+          "academics" : 0,
+          "finances" : 4,
+          "health" : -8,
+          "social" : -4
+        },
+        "suite" : ""
+      }, {
+        "answer" : "Rien ma mère fera",
+        "changes" : {
+          "academics" : 0,
+          "finances" : 0,
+          "health" : 0,
+          "social" : -8
+        },
+        "suite" : ""
+      }, {
+        "answer" : "Des boites de conserve",
+        "changes" : {
+          "academics" : 0,
+          "finances" : -4,
+          "health" : -2,
+          "social" : 0
+        },
+        "suite" : ""
+      } ],
+      "date" : -1,
+      "image" : "",
+      "period" : 0,
+      "question" : "Tu fais tes courses pour acheter à manger, que choisis-tu?",
+      "ranges" : {
+        "academics" : [ 0, 100 ],
+        "finances" : [ 0, 100 ],
+        "health" : [ 0, 100 ],
+        "social" : [ 0, 100 ]
+      },
+      "section" : -1,
+      "tag" : "Nourriture"
+    },
+    "-Ke9nQvPihw-3J9eXY_m" : {
+      "answers" : [ {
+        "answer" : "Tu te rendors jusqu'au prochain cours, à quoi bon suivre un cours alors que tu as raté le début ",
+        "changes" : {
+          "academics" : 0,
+          "finances" : 0,
+          "health" : 8,
+          "social" : -4
+        },
+        "comment" : "Le prof lui non plus ne s'est pas réveillé ce matin. On dirait bien que tu as gagné 2h de sommeil aujourd'hui, félicitation! ",
+        "suite" : ""
+      }, {
+        "answer" : "Tu prends tes affaires et cours attraper ton bus, avec un peu de chance tu arriveras pour 8h30",
+        "changes" : {
+          "academics" : -8,
+          "finances" : 0,
+          "health" : 0,
+          "social" : 0
+        },
+        "comment" : "Tu arrives en cours avant de te rendre compte que tu as oublié la moitié de ton cours, décidement ce n'est pas ton jour aujourd'hui!",
+        "suite" : ""
+      }, {
+        "answer" : "Tu règles ton réveil pour être en cours à 9h, c'est bien assez tôt pour toi et tu auras même le temps de te préparer ",
+        "changes" : {
+          "academics" : -4,
+          "finances" : 0,
+          "health" : 8,
+          "social" : 0
+        },
+        "comment" : "Cette heure aurait pu t'être utile. Heureusement que tu as pu dormir un peu ",
+        "suite" : ""
+      }, {
+        "answer" : "Pas besoin d'aller en cours aujourd'hui, ton efficacité est la même que tu sois en amphi ou dans ton lit ",
+        "changes" : {
+          "academics" : -12,
+          "finances" : 0,
+          "health" : 2,
+          "social" : -4
+        },
+        "comment" : "Bien que tu sembles penser le contraire, aller à un cours ou deux pourrait bien t'être utile",
+        "suite" : ""
+      } ],
+      "date" : -1,
+      "image" : "",
+      "period" : -1,
+      "question" : "Ce matin ton réveil n'a pas sonné, il est 8h20 et ton cours d'analyse a déjà commencé: ",
+      "ranges" : {
+        "academics" : [ 11, 100 ],
+        "finances" : [ 0, 100 ],
+        "health" : [ 0, 100 ],
+        "social" : [ 0, 100 ]
+      },
+      "section" : -1,
+      "tag" : ""
+    },
+    "-KeD5CUF1OaKlYbaxSX1" : {
+      "answers" : [ {
+        "answer" : "Oui, je vais y aller tout le temps!",
+        "changes" : {
+          "academics" : -6,
+          "finances" : 0,
+          "health" : 10,
+          "social" : 2
+        },
+        "comment" : "Quelle motivation ! Mais n'oublie pas de bosser un peu tes cours...",
+        "suite" : ""
+      }, {
+        "answer" : "Je vais m'inscrire, on verra si ça me plait.",
+        "changes" : {
+          "academics" : -2,
+          "finances" : 0,
+          "health" : 4,
+          "social" : 2
+        },
+        "comment" : "On connaît ça... ça y va 2 semaine et après on y remet plus les pieds !",
+        "suite" : ""
+      }, {
+        "answer" : "Je m'inscris, la muscu c'est parfait pour la drague !",
+        "changes" : {
+          "academics" : -4,
+          "finances" : 0,
+          "health" : 2,
+          "social" : 6
+        },
+        "comment" : ";)",
+        "suite" : ""
+      }, {
+        "answer" : "La muscu ? Non merci.",
+        "changes" : {
+          "academics" : 6,
+          "finances" : 0,
+          "health" : -6,
+          "social" : -2
+        },
+        "comment" : "Dommage... Trouve peut-être un autre sport ?",
+        "suite" : ""
+      } ],
+      "date" : -1,
+      "image" : "salle_sport1.JPG",
+      "period" : 0,
+      "question" : "Il est temps de se remettre en forme ! Tu t'inscris à la musculation?",
+      "ranges" : {
+        "academics" : [ 0, 100 ],
+        "finances" : [ 0, 100 ],
+        "health" : [ 0, 80 ],
+        "social" : [ 0, 100 ]
+      },
+      "section" : -1,
+      "tag" : "Sport"
+    },
+    "-KeD9d6sHLORpbGFqRnR" : {
+      "answers" : [ {
+        "answer" : "Je vais courir au bord du lac ! ",
+        "changes" : {
+          "academics" : 0,
+          "finances" : 0,
+          "health" : -8,
+          "social" : 0
+        },
+        "comment" : "Pas de chance ! Il s'est mis à pleuvoir et tu es tombé malade.",
+        "suite" : ""
+      }, {
+        "answer" : "Je sors avec mes amis.",
+        "changes" : {
+          "academics" : -2,
+          "finances" : -12,
+          "health" : 0,
+          "social" : 2
+        },
+        "comment" : "Tu te fais voler un billet de 50CHF... Tu aurais peut-être dû rester chez toi ce soir.",
+        "suite" : ""
+      }, {
+        "answer" : "Je reste tranquille chez moi et m'endors devant une série",
+        "changes" : {
+          "academics" : -8,
+          "finances" : 0,
+          "health" : 4,
+          "social" : -2
+        },
+        "comment" : "Tu as oublié de régler ton réveil pour le lendemain... Et rate 2h de cours.",
+        "suite" : ""
+      }, {
+        "answer" : "Tu prends de l'avance pour la semaine suivante.",
+        "changes" : {
+          "academics" : 2,
+          "finances" : 0,
+          "health" : 0,
+          "social" : -8
+        },
+        "comment" : "Tu étais tellement concentré que tu as raté 10 messages de ton pote et 5 appels de tes parents.",
+        "suite" : ""
+      } ],
+      "date" : -1,
+      "image" : "Epfl_entrée_vide_bm et sac",
+      "period" : -1,
+      "question" : "Tu as miraculeusement un peu de temps ce soir! Qu'est-ce que tu fais ?",
+      "ranges" : {
+        "academics" : [ 15, 100 ],
+        "finances" : [ 15, 100 ],
+        "health" : [ 15, 100 ],
+        "social" : [ 15, 100 ]
+      },
+      "section" : -1,
+      "tag" : ""
+    },
+    "-KeDCW8hPQ0gBrvD36P0" : {
+      "answers" : [ {
+        "answer" : "Je dors toute la matinée et je récupère !",
+        "changes" : {
+          "academics" : -8,
+          "finances" : 0,
+          "health" : 6,
+          "social" : -2
+        },
+        "suite" : ""
+      }, {
+        "answer" : "Je ne manquerais la physique pour rien au monde !",
+        "changes" : {
+          "academics" : 6,
+          "finances" : 0,
+          "health" : -8,
+          "social" : 2
+        },
+        "suite" : ""
+      } ],
+      "date" : -1,
+      "image" : "Salle de cours_amphi_dormir_ecouter_etudiants",
+      "period" : 1,
+      "question" : "Tu es en manque de sommeil mais demain matin tu as 4 heures de physique. Que fais-tu?",
+      "ranges" : {
+        "academics" : [ 0, 100 ],
+        "finances" : [ 0, 100 ],
+        "health" : [ 0, 100 ],
+        "social" : [ 0, 100 ]
+      },
+      "section" : -1,
+      "tag" : "Sommeil"
+    },
+    "-KeipmL5klsRVkmypfel" : {
+      "answers" : [ {
+        "answer" : "J'y vais, je suis super motivé et je vais chanter depuis le premier rang",
+        "changes" : {
+          "academics" : -5,
+          "finances" : 0,
+          "health" : -10,
+          "social" : 8
+        },
+        "comment" : "Tu as même obtenu un autographe ! Par contre, tu passes le reste de la semaine au lit...",
+        "suite" : ""
+      }, {
+        "answer" : "J'y vais mais je reste au fond en écoutant tranquillement",
+        "changes" : {
+          "academics" : 0,
+          "finances" : 0,
+          "health" : -2,
+          "social" : -8
+        },
+        "comment" : "Ton meilleur pote est super déçu, et en plus tu te sens pire le lendemain.",
+        "suite" : ""
+      }, {
+        "answer" : "Je reste chez moi",
+        "changes" : {
+          "academics" : 4,
+          "finances" : 0,
+          "health" : 2,
+          "social" : -8
+        },
+        "comment" : "Ton meilleur pote est super déçu... Mais au moins tu n'es pas tombé malade",
+        "suite" : ""
+      } ],
+      "date" : -1,
+      "image" : "Soirée_concert_boite_scène.jpg",
+      "period" : -1,
+      "question" : "Tu as un billet pour le concert de ton artiste préféré mais tu commences à avoir mal à la gorge",
+      "ranges" : {
+        "academics" : [ 0, 100 ],
+        "finances" : [ 0, 100 ],
+        "health" : [ 0, 100 ],
+        "social" : [ 0, 100 ]
+      },
+      "section" : -1,
+      "tag" : "soiree"
+    },
+    "-KeitjlYWGF1KLVZ19Qg" : {
+      "answers" : [ {
+        "answer" : "J'y vais mais je rentre pour minuit",
+        "changes" : {
+          "academics" : -2,
+          "finances" : -5,
+          "health" : 0,
+          "social" : 4
+        },
+        "comment" : "La vie c'est des compromis !",
+        "suite" : ""
+      }, {
+        "answer" : "Je fais la night et j'enchaïne avec les cours!",
+        "changes" : {
+          "academics" : -6,
+          "finances" : -8,
+          "health" : -2,
+          "social" : 10
+        },
+        "comment" : "Tu es crevé, mais la soirée en valait la peine.",
+        "suite" : ""
+      }, {
+        "answer" : "Je reste chez moi pour avoir mes 8h de sommeil.",
+        "changes" : {
+          "academics" : 5,
+          "finances" : 0,
+          "health" : 3,
+          "social" : -8
+        },
+        "comment" : "Faudrait penser à sociabiliser un peu des fois ...",
+        "suite" : ""
+      }, {
+        "answer" : "Jeudi soir j'ai sport !",
+        "changes" : {
+          "academics" : 0,
+          "finances" : 0,
+          "health" : 10,
+          "social" : -6
+        },
+        "comment" : "C'est bien, mais une bière de temps en temps ça fait pas de mal !",
+        "suite" : ""
+      } ],
+      "date" : -1,
+      "image" : "Soirée_concert_boite_scène.jpg",
+      "period" : -1,
+      "question" : "Jeudi soir il y a une soirée en ville mais tu as cours à 8h, que fais-tu?",
+      "ranges" : {
+        "academics" : [ 0, 100 ],
+        "finances" : [ 0, 100 ],
+        "health" : [ 0, 100 ],
+        "social" : [ 0, 100 ]
+      },
+      "section" : -1,
+      "tag" : "soiree"
+    },
+    "-KeiwRex3rTPqqaN_88c" : {
+      "answers" : [ {
+        "answer" : "Je continue de réviser jusqu'à une heure raisonnable",
+        "changes" : {
+          "academics" : -4,
+          "finances" : 0,
+          "health" : 2,
+          "social" : 0
+        },
+        "comment" : "Ca ne suffira pas... Mais tu auras limité les dégâts !",
+        "suite" : ""
+      }, {
+        "answer" : "Je fais nuit blanche !",
+        "changes" : {
+          "academics" : -2,
+          "finances" : 0,
+          "health" : -8,
+          "social" : 0
+        },
+        "comment" : "Tu réussis analyse... Mais tu rates les autres!",
+        "suite" : ""
+      }, {
+        "answer" : "Tant pis pour cet examen, je réussirai les autres.",
+        "changes" : {
+          "academics" : 6,
+          "finances" : 0,
+          "health" : 4,
+          "social" : 0
+        },
+        "comment" : "C'était un bon calcul! ",
+        "suite" : ""
+      } ],
+      "date" : -1,
+      "image" : "Rolex_interieur_etudiants_revision.JPG",
+      "period" : 4,
+      "question" : "Tu n'as pas assez révisé l'examen d'analyse qui commence demain à 8h",
+      "ranges" : {
+        "academics" : [ 0, 100 ],
+        "finances" : [ 0, 100 ],
+        "health" : [ 0, 100 ],
+        "social" : [ 0, 100 ]
+      },
+      "section" : -1,
+      "tag" : "Révisions"
+    },
+    "-KeiyLhqFfgnT39qBcqk" : {
+      "answers" : [ {
+        "answer" : "Roastbeef",
+        "changes" : {
+          "academics" : 0,
+          "finances" : -2,
+          "health" : -4,
+          "social" : 4
+        },
+        "comment" : "Miam !",
+        "suite" : ""
+      }, {
+        "answer" : "Poulet / curry",
+        "changes" : {
+          "academics" : 0,
+          "finances" : -2,
+          "health" : -2,
+          "social" : 3
+        },
+        "comment" : "Miam !",
+        "suite" : ""
+      }, {
+        "answer" : "Jambon / Fromage",
+        "changes" : {
+          "academics" : 0,
+          "finances" : -2,
+          "health" : 3,
+          "social" : -3
+        },
+        "comment" : "Pas très original...",
+        "suite" : ""
+      }, {
+        "answer" : "Chèvre pané",
+        "changes" : {
+          "academics" : -10,
+          "finances" : 0,
+          "health" : 0,
+          "social" : 0
+        },
+        "comment" : "ça existe pas à Sat !",
+        "suite" : ""
+      } ],
+      "date" : -1,
+      "image" : "Sat_bar_commande_4 étudiants.JPG",
+      "question" : "Quel sandwich tu prends à Sat?",
+      "ranges" : {
+        "academics" : [ 0, 100 ],
+        "finances" : [ 0, 100 ],
+        "health" : [ 0, 100 ],
+        "social" : [ 0, 100 ]
+      },
+      "section" : -1,
+	"period" : -1,
+      "tag" : "Nourriture"
+    },
+    "-Kf1fV8CFNU7Fc4PqvtH" : {
+      "answers" : [ {
+        "answer" : "Je m'enfouis du pays!",
+        "changes" : {
+          "academics" : -2,
+          "finances" : -12,
+          "health" : 0,
+          "social" : 0
+        },
+        "comment" : "Pas de bol. La police te ratrappe avant que tu ne passes la frontière suisse... Ca te coute très cher",
+        "suite" : ""
+      }, {
+        "answer" : "Rien",
+        "changes" : {
+          "academics" : 0,
+          "finances" : 0,
+          "health" : 0,
+          "social" : -12
+        },
+        "comment" : "Tu aurais au moins pu t'excuser chez sa famille.",
+        "suite" : ""
+      }, {
+        "answer" : "Je pleurs",
+        "changes" : {
+          "academics" : 0,
+          "finances" : 0,
+          "health" : -4,
+          "social" : 4
+        },
+        "comment" : "Réaction compréhensible... Après tout tu voulais pas le tuer.",
+        "suite" : ""
+      }, {
+        "answer" : "Je réflechis encore.",
+        "changes" : {
+          "academics" : 2,
+          "finances" : 0,
+          "health" : 4,
+          "social" : 0
+        },
+        "comment" : "Très bien. Il s'avère qu'il n'était pas mort après tout.",
+        "suite" : ""
+      } ],
+      "date" : -1,
+      "image" : "Centre Sportif Generale.jpg",
+      "period" : -1,
+      "question" : "Tu t'es inscrit(e) au cours d'autodéfense! Malheureusement tu es très maladroit(e) et tu tues ton partennaire lors d'un exercice de défense contre la strangulation. Que fais-tu maintenant? ",
+      "ranges" : {
+        "academics" : [ 0, 100 ],
+        "finances" : [ 0, 100 ],
+        "health" : [ 0, 75 ],
+        "social" : [ 0, 100 ]
+      },
+      "section" : -1,
+      "tag" : "Sport"
+    },
+    "-Kf1hcxqmexsw6CacFVi" : {
+      "answers" : [ {
+        "answer" : "Oui, pour voir les filles / les garçons en tights!!",
+        "changes" : {
+          "academics" : 0,
+          "finances" : 0,
+          "health" : 8,
+          "social" : 2
+        },
+        "comment" : "Bon au moins tu y vas, on va pas te juger pour les raisons... ;)",
+        "suite" : ""
+      }, {
+        "answer" : "Non, j'en ai assez de la physique à l'EPFL",
+        "changes" : {
+          "academics" : 2,
+          "finances" : 0,
+          "health" : -8,
+          "social" : -4
+        },
+        "comment" : "C'est de la CONDITION non pas de la physique!",
+        "suite" : ""
+      }, {
+        "answer" : "Pas besoin de ça",
+        "changes" : {
+          "academics" : 4,
+          "finances" : 0,
+          "health" : -4,
+          "social" : 0
+        },
+        "comment" : "Do you even sport?",
+        "suite" : ""
+      } ],
+      "date" : -1,
+      "image" : "Centre Sportif Generale.jpg",
+      "period" : -1,
+      "question" : "Tu vas à la Condition Physique le mardi soir?",
+      "ranges" : {
+        "academics" : [ 0, 100 ],
+        "finances" : [ 0, 100 ],
+        "health" : [ 0, 80 ],
+        "social" : [ 0, 80 ]
+      },
+      "section" : -1,
+      "tag" : "Sport"
+    },
+    "-Kf1lF5oxmZwjpCYhZ9l" : {
+      "answers" : [ {
+        "answer" : "Aucune!",
+        "changes" : {
+          "academics" : 0,
+          "finances" : 4,
+          "health" : 0,
+          "social" : -8
+        },
+        "comment" : "Dommage...",
+        "suite" : ""
+      }, {
+        "answer" : "La Salsa",
+        "changes" : {
+          "academics" : 0,
+          "finances" : -4,
+          "health" : 2,
+          "social" : 8
+        },
+        "comment" : "Pas mal, bouge tes hanches!",
+        "suite" : ""
+      }, {
+        "answer" : "LindyHop",
+        "changes" : {
+          "academics" : 0,
+          "finances" : -6,
+          "health" : 1,
+          "social" : 8
+        },
+        "comment" : "Ah, mais tu as la classe! ",
+        "suite" : ""
+      }, {
+        "answer" : "Danses de sallon",
+        "changes" : {
+          "academics" : 0,
+          "finances" : -7,
+          "health" : 0,
+          "social" : 7
+        },
+        "comment" : "Toujours utile ;)",
+        "suite" : ""
+      } ],
+      "date" : -1,
+      "image" : "danse.png",
+      "period" : -1,
+      "question" : "Quelle danse pratiques-tu?",
+      "ranges" : {
+        "academics" : [ 0, 100 ],
+        "finances" : [ 0, 100 ],
+        "health" : [ 0, 100 ],
+        "social" : [ 0, 100 ]
+      },
+      "section" : -1,
+      "tag" : ""
+    },
+    "-Kf1oNdVsX564vDxl720" : {
+      "answers" : [ {
+        "answer" : "Je prends un taxi.",
+        "changes" : {
+          "academics" : 0,
+          "finances" : -8,
+          "health" : 8,
+          "social" : 0
+        },
+        "comment" : "Safe, mais uff c'est cher...",
+        "suite" : ""
+      }, {
+        "answer" : "Je vais en voiture avec mes amis",
+        "changes" : {
+          "academics" : 0,
+          "finances" : 8,
+          "health" : -12,
+          "social" : 0
+        },
+        "comment" : "Ton ami est ivre et vous avez un accident. Heureusement vous survivez avec des blessure légères...",
+        "suite" : ""
+      }, {
+        "answer" : "Je marche",
+        "changes" : {
+          "academics" : 0,
+          "finances" : 7,
+          "health" : -6,
+          "social" : 0
+        },
+        "comment" : "ulala, c'est super loin! Mais moins cher, c'est vrai.",
+        "suite" : ""
+      } ],
+      "date" : -1,
+      "image" : "Epfl_metro qui part.JPG",
+      "period" : -1,
+      "question" : "Tu es en ville, tu voudrais rentrer chez toi mais tu as raté le dernier métro! :O",
+      "ranges" : {
+        "academics" : [ 0, 100 ],
+        "finances" : [ 0, 100 ],
+        "health" : [ 0, 100 ],
+        "social" : [ 0, 100 ]
+      },
+      "section" : -1,
+      "tag" : "soiree"
+    },
+    "-Kf2ABCXKyTd63t-tT2i" : {
+      "answers" : [ {
+        "answer" : "C'est l'Association des Doctorants Nus",
+        "changes" : {
+          "academics" : -8,
+          "finances" : 0,
+          "health" : 0,
+          "social" : 4
+        },
+        "comment" : "eeuh presque ",
+        "suite" : ""
+      }, {
+        "answer" : "Elle est composée d'acides aminées",
+        "changes" : {
+          "academics" : -8,
+          "finances" : 0,
+          "health" : 0,
+          "social" : 0
+        },
+        "comment" : "Tu es en méca?",
+        "suite" : ""
+      }, {
+        "answer" : "Elle est chargée négativement",
+        "changes" : {
+          "academics" : 6,
+          "finances" : 0,
+          "health" : 0,
+          "social" : 0
+        },
+        "comment" : "Correct!",
+        "suite" : ""
+      }, {
+        "answer" : "Quoi?",
+        "changes" : {
+          "academics" : -5,
+          "finances" : 0,
+          "health" : 0,
+          "social" : 0
+        },
+        "comment" : "C'est dur la bio...",
+        "suite" : ""
+      } ],
+      "date" : -1,
+      "image" : "DNA.JPG",
+      "period" : -1,
+      "question" : "Que sais-tu au sujet de l'ADN?",
+      "ranges" : {
+        "academics" : [ 0, 100 ],
+        "finances" : [ 0, 100 ],
+        "health" : [ 0, 100 ],
+        "social" : [ 0, 100 ]
+      },
+      "section" : -1,
+      "tag" : "Biologie"
+    },
+    "-Kf2SsPAWwqWa6RQS1qd" : {
+      "answers" : [ {
+        "answer" : "Une réaction avec l'oxygène",
+        "changes" : {
+          "academics" : -1,
+          "finances" : 0,
+          "health" : 0,
+          "social" : 0
+        },
+        "comment" : "Presque mais pas tout à fait... Revois bien ta chimie ;)",
+        "suite" : ""
+      }, {
+        "answer" : "Une perte d'électrons",
+        "changes" : {
+          "academics" : 10,
+          "finances" : 0,
+          "health" : 0,
+          "social" : -5
+        },
+        "comment" : "Oui, bravo! Mais tu as malheureusement raté une soirée parce que tu as travaillé trop la chimie...",
+        "suite" : ""
+      }, {
+        "answer" : "C'est un truc de chimie je crois",
+        "changes" : {
+          "academics" : -8,
+          "finances" : 0,
+          "health" : 0,
+          "social" : 0
+        },
+        "comment" : "ça va pas le faire... Tu as 2 ton exam :/",
+        "suite" : ""
+      } ],
+      "date" : -1,
+      "image" : "",
+      "period" : 3,
+      "question" : "Qu'est-ce qu'une oxydation?",
+      "ranges" : {
+        "academics" : [ 0, 100 ],
+        "finances" : [ 0, 100 ],
+        "health" : [ 0, 100 ],
+        "social" : [ 0, 100 ]
+      },
+      "section" : -1,
+      "tag" : "Révisions"
+    },
+    "-Kf2ZDNDgff71tYrWx-o" : {
+      "answers" : [ {
+        "answer" : "Seul, comme ça tu as plus de temps pour travailler",
+        "changes" : {
+          "academics" : 4,
+          "finances" : 0,
+          "health" : 0,
+          "social" : -8
+        },
+        "comment" : "Ce serait pas mal de voir tes amis de temps en temps !",
+        "suite" : ""
+      }, {
+        "answer" : "Avec tes amis",
+        "changes" : {
+          "academics" : 0,
+          "finances" : -8,
+          "health" : 0,
+          "social" : 8
+        },
+        "comment" : "Ils se débrouillent toujours pour aller dans la cafet la plus chère!",
+        "suite" : ""
+      } ],
+      "date" : -1,
+      "image" : "restaurant.JPG",
+      "period" : -1,
+      "question" : "C'est mardi, avce qui est-ce que tu manges?",
+      "ranges" : {
+        "academics" : [ 0, 100 ],
+        "finances" : [ 0, 100 ],
+        "health" : [ 0, 100 ],
+        "social" : [ 0, 100 ]
+      },
+      "section" : -1,
+      "tag" : "Nourriture"
+    },
+    "-Kf2_85smRq2OqEskDY1" : {
+      "answers" : [ {
+        "answer" : "Obligatoire",
+        "changes" : {
+          "academics" : -8,
+          "finances" : -6,
+          "health" : 10,
+          "social" : 0
+        },
+        "comment" : "N'oublies pas que tu es à l'EPFL...",
+        "suite" : ""
+      }, {
+        "answer" : "Un plaisir à s'octroyer de temps en temps",
+        "changes" : {
+          "academics" : 0,
+          "finances" : 0,
+          "health" : 6,
+          "social" : 4
+        },
+        "comment" : "En plus, c'est sympa pour se faire des amis !",
+        "suite" : ""
+      }, {
+        "answer" : "Une corvée mais il faut bien s'y mettre de temps en temps",
+        "changes" : {
+          "academics" : 0,
+          "finances" : 0,
+          "health" : 4,
+          "social" : -4
+        },
+        "comment" : "N'oublie pas d'y aller avec la bonne humeur...",
+        "suite" : ""
+      }, {
+        "answer" : "Trop ennuyeux, tu n'en fais jamais",
+        "changes" : {
+          "academics" : 6,
+          "finances" : 0,
+          "health" : -8,
+          "social" : 0
+        },
+        "comment" : "Au moins tu révises tes cours !",
+        "suite" : ""
+      } ],
+      "date" : -1,
+      "image" : "Centre Sportif Generale.jpg",
+      "period" : -1,
+      "question" : "Pour toi le sport c'est...",
+      "ranges" : {
+        "academics" : [ 0, 100 ],
+        "finances" : [ 0, 100 ],
+        "health" : [ 0, 100 ],
+        "social" : [ 0, 100 ]
+      },
+      "section" : -1,
+      "tag" : "Sport"
+    },
+    "-Kf2aVu4vzLfkoXgQYKg" : {
+      "answers" : [ {
+        "answer" : "Une pomme",
+        "changes" : {
+          "academics" : 0,
+          "finances" : 0,
+          "health" : 6,
+          "social" : -6
+        },
+        "comment" : "Tes potes se moquent de toi, ils ont tous pris une crêpe !",
+        "suite" : ""
+      }, {
+        "answer" : "Crêpe sur l'espla",
+        "changes" : {
+          "academics" : 8,
+          "finances" : -3,
+          "health" : -8,
+          "social" : 0
+        },
+        "comment" : "Tu en partages un bout avec ton assistant de physique, il devient fan de toi !",
+        "suite" : ""
+      }, {
+        "answer" : "Tu te gardes pour ce soir, c'est plus de ton âge !",
+        "changes" : {
+          "academics" : 0,
+          "finances" : 4,
+          "health" : 4,
+          "social" : -6
+        },
+        "comment" : "Tes potes se moquent de toi, ils ont tous pris une crêpe !",
+        "suite" : ""
+      }, {
+        "answer" : "Des petits biscuits comme depuis tes 12 ans, pourquoi changer les habitudes?",
+        "changes" : {
+          "academics" : 0,
+          "finances" : -6,
+          "health" : -2,
+          "social" : 8
+        },
+        "comment" : "Et tes potes t'adorent parce que tu partages avec eux à chaque fois !",
+        "suite" : ""
+      } ],
+      "date" : -1,
+      "image" : "Nourriture_pomme_orange.jpg",
+      "period" : -1,
+      "question" : "Il est 16h, c'est l'heure du goûter ! Tu manges quoi ?",
+      "ranges" : {
+        "academics" : [ 0, 100 ],
+        "finances" : [ 0, 100 ],
+        "health" : [ 0, 100 ],
+        "social" : [ 0, 100 ]
+      },
+      "section" : -1,
+      "tag" : "Nourriture"
+    }
+  },
+  "tags" : {
+    "-KYOyx_ThIDB-gotoPo5" : "soiree",
+    "-KYbc4KOV9BrQL3xxmlN" : "rolex",
+    "-Kdanaral9Bfhy7IeLdm" : "Nourriture",
+    "-KeD5Cb0yk0Hg9sCResz" : "Sport",
+    "-KeDCWGIjF_HJCvFrPBz" : "Sommeil",
+    "-KeiwRj5kKbaZJVfGIYd" : "Révisions",
+    "-Kf2ABGntCDF0XyUh76A" : "Biologie"
+  }
+}
