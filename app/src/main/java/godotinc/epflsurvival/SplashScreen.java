@@ -10,6 +10,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;
 
@@ -18,14 +19,14 @@ import org.json.*;
 public class SplashScreen extends AppCompatActivity {
     private static final int resId = R.raw.cards;
 
-    private HashSet<Question> questions;
+    private ArrayList<Question> questions;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
 
-        questions = new HashSet<>();
+        questions = new ArrayList<>();
         loadCards();
     }
 
@@ -95,8 +96,9 @@ public class SplashScreen extends AppCompatActivity {
                     JSONObject changes = answer.getJSONObject("changes");
 
                     String message = "";
-                    if(answer.has("comment"))
+                    if(answer.has("comment")){
                         message = answer.getString("comment");
+                    }
 
                     qBuilder.addAnswer(answer.getString("answer"),
                                         answer.getString("suite"),

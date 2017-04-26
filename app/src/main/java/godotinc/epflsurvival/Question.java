@@ -9,6 +9,16 @@ import java.io.Serializable;
 public class Question implements Serializable {
     private static final long serialVersionUID = 7526472295622776147L;
 
+    private int mins[];
+    private int maxs[];
+
+    public enum Range{
+        Academics,
+        Finances,
+        Health,
+        Social
+    }
+
     private String  questionText,
                     tag,
                     image;
@@ -18,19 +28,12 @@ public class Question implements Serializable {
                 section;
 
     private QuestionAnswer[] answers;
+    private int answersCount;
 
-    public enum Range{
-        Academics,
-        Finances,
-        Health,
-        Social
-    }
-    private int mins[];
-    private int maxs[];
 
     public Question(String text, String tag,
                     String image, int date, int period,
-                    int section, QuestionAnswer[] answers,
+                    int section, QuestionAnswer[] answers, int answersCount,
                     int[] mins, int[] maxs){
         this.questionText = text;
         this.tag = tag;
@@ -41,7 +44,49 @@ public class Question implements Serializable {
         this.answers = answers.clone();
         this.mins = mins.clone();
         this.maxs = maxs.clone();
+        this.answersCount = answersCount;
     }
+
+    public String getQuestionText() {
+        return questionText;
+    }
+
+    public String getTag() {
+        return tag;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public int getDate() {
+        return date;
+    }
+
+    public int getPeriod() {
+        return period;
+    }
+
+    public int getSection() {
+        return section;
+    }
+
+    public QuestionAnswer[] getAnswers() {
+        return answers;
+    }
+
+    public int getAnswersCount(){
+        return answersCount;
+    }
+
+    public int[] getMins() {
+        return mins;
+    }
+
+    public int[] getMaxs() {
+        return maxs;
+    }
+
 
     /**
      * Class to build questions
@@ -72,7 +117,7 @@ public class Question implements Serializable {
 
         public Question build(){
             return new Question(questionText, tag, image, date,
-                                period, section, answers,
+                                period, section, answers, answersCount,
                                 mins, maxs);
         }
 
@@ -82,7 +127,7 @@ public class Question implements Serializable {
                 return;
 
             QuestionAnswer qa = new QuestionAnswer(text, suite, message, a, s, h, f);
-            answers[answersCount] = qa;
+            answers[answersCount++] = qa;
         }
 
         public void setRange(Range range, int min, int max){
