@@ -9,12 +9,13 @@ import android.widget.TextView;
 
 public class QuestionActivity extends AppCompatActivity {
     private Question q;
+    private GameState gameState;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        final GameState gameState = (GameState)getIntent().getSerializableExtra("GAME_STATE");
+        gameState = (GameState)getIntent().getSerializableExtra("GAME_STATE");
 
         setContentView(R.layout.activity_question);
 
@@ -29,7 +30,15 @@ public class QuestionActivity extends AppCompatActivity {
             academicText.setText(Integer.toString(gameState.getAcademics()));
 
         //Setup question
-        q = gameState.getRandomQuestion();
+        try{
+            q = gameState.getRandomQuestion();
+        }
+        catch(Exception e){
+            Intent intent = new Intent(getApplicationContext(), MenuActivity.class);
+            intent.putExtra("QUESTIONS", gameState.getAllQuestions());
+            startActivity(intent);
+            return;
+        }
 
         TextView questionText = (TextView) findViewById(R.id.questionText);
         questionText.setText(q.getQuestionText());
@@ -70,9 +79,23 @@ public class QuestionActivity extends AppCompatActivity {
             gState.addFinances(qa.getFinances());
             gState.addHealth(qa.getHealth());
 
-            Intent intent = new Intent(v.getContext(), QuestionActivity.class);
-            intent.putExtra("GAME_STATE", gState);
-            startActivity(intent);
+            if(gState.isGameOver()){
+                Intent intent = new Intent(v.getContext(), GameOverActivity.class);
+                intent.putExtra("QUESTIONS", gState.getAllQuestions());
+                startActivity(intent);
+            }
+            else{
+                Intent intent = new Intent(v.getContext(), QuestionActivity.class);
+                intent.putExtra("GAME_STATE", gState);
+                startActivity(intent);
+            }
         }
+    }
+
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(getApplicationContext(), MenuActivity.class);
+        intent.putExtra("GAME_STATE", gameState);
+        startActivity(intent);
     }
 }

@@ -6,6 +6,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.LinkedList;
 import java.util.Random;
@@ -23,7 +24,7 @@ public class QuestionsManager implements Serializable {
         if(questions == null)
             throw new IllegalArgumentException("Null question list");
 
-        this.questions = questions;
+        this.questions = (ArrayList<Question>)questions.clone();
     }
 
     public Question randomQuestion(int health, int social, int money, int academics, String tag, int date, int period){
@@ -31,7 +32,7 @@ public class QuestionsManager implements Serializable {
 
         for(Question q : questions){
             if(tag != "" && q.getTag().equals(tag) ||
-                    period > 0 && q.getPeriod() != period ||
+                    period > -1 && period == q.getPeriod() ||
                     q.getDate() != -1 && q.getDate() == date){
                 selected.push(q);
                 continue;
@@ -52,7 +53,12 @@ public class QuestionsManager implements Serializable {
         int qIdx = rng.nextInt(selected.size());
         Question q = selected.get(qIdx);
 
-        questions.remove(qIdx);
+        if(!questions.remove(q))
+            throw new RuntimeException("Unable to remove question");
+
+        if(q == null)
+            throw new RuntimeException("Null question");
+
         return q;
     }
 
