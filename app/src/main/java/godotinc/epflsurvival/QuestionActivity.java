@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -40,6 +41,18 @@ public class QuestionActivity extends AppCompatActivity {
             startActivity(intent);
             return;
         }
+
+        ImageView image = (ImageView) findViewById(R.id.imageView7);
+        String imageName = q.getImage();
+        String[] parts = imageName.split("\\.");
+        if(parts.length>0){
+            imageName = parts[0];
+        }
+        //String imageName = "amphi_ce"; //marche
+        System.out.println(imageName);
+        int drawableID = getResources().getIdentifier(imageName, "drawable", getPackageName());
+        System.out.println(drawableID);
+        image.setImageResource(drawableID);
 
         TextView questionText = (TextView) findViewById(R.id.questionText);
         questionText.setText(q.getQuestionText());
