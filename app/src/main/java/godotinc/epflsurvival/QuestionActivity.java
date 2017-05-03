@@ -20,20 +20,12 @@ public class QuestionActivity extends AppCompatActivity {
         setContentView(R.layout.activity_question);
 
         //Setup stats
-        TextView healthText = (TextView) findViewById(R.id.healthText);
-            healthText.setText(Integer.toString(gameState.getHealth()));
         ProgressBar barHealth = (ProgressBar) findViewById(R.id.barHealth);
                 barHealth.setProgress(gameState.getHealth());
-        TextView socialText = (TextView) findViewById(R.id.social);
-            socialText.setText(Integer.toString(gameState.getSocial()));
         ProgressBar barSocial = (ProgressBar) findViewById(R.id.barSocial);
             barSocial.setProgress(gameState.getSocial());
-        TextView moneyText = (TextView) findViewById(R.id.finances);
-            moneyText.setText(Integer.toString(gameState.getFinances()));
         ProgressBar barFinances = (ProgressBar) findViewById(R.id.barFinances);
             barFinances.setProgress(gameState.getFinances());
-        TextView academicText = (TextView) findViewById(R.id.academics);
-            academicText.setText(Integer.toString(gameState.getAcademics()));
         ProgressBar barAcademic = (ProgressBar) findViewById(R.id.barAcademic);
             barAcademic.setProgress(gameState.getAcademics());
 
