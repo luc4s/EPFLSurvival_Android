@@ -126,7 +126,7 @@ public class Question implements Serializable {
             if(answersCount > 4)
                 return;
 
-            QuestionAnswer qa = new QuestionAnswer(text, suite, message, a, s, h, f);
+            QuestionAnswer qa = new QuestionAnswer(text, message, suite, a, s, h, f);
             answers[answersCount++] = qa;
         }
 

@@ -1,14 +1,23 @@
 package godotinc.epflsurvival;
 
 import android.content.Intent;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.GridLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import java.util.Arrays;
+
+import static android.util.Log.DEBUG;
+
 public class QuestionActivity extends AppCompatActivity {
+    private final static int COMMENT_WAIT_TIME = 1000;
+
     private Question q;
     private GameState gameState;
 
@@ -19,6 +28,9 @@ public class QuestionActivity extends AppCompatActivity {
         gameState = (GameState)getIntent().getSerializableExtra("GAME_STATE");
 
         setContentView(R.layout.activity_question);
+
+        //Setup custom transition
+        overridePendingTransition(R.anim.fadein, R.anim.fadeout);
 
         //Setup stats
         ProgressBar barHealth = (ProgressBar) findViewById(R.id.barHealth);
@@ -80,15 +92,58 @@ public class QuestionActivity extends AppCompatActivity {
             gState.addFinances(qa.getFinances());
             gState.addHealth(qa.getHealth());
 
+            boolean comment = qa.getMessage().length() > 0;
+            if(comment){
+                v.setVisibility(View.GONE);
+                ((Button) findViewById(R.id.button)).setEnabled(false);
+                ((Button) findViewById(R.id.button2)).setEnabled(false);;
+                ((Button) findViewById(R.id.button7)).setEnabled(false);
+                ((Button) findViewById(R.id.button8)).setEnabled(false);
+
+                GridLayout layout = ((GridLayout) findViewById(R.id.gridLayoutButtons));
+                int idx = layout.indexOfChild(v);
+                layout.removeView(v);
+
+                TextView message = new TextView(v.getContext());
+                message.setWidth(v.getWidth());
+                message.setHeight(v.getHeight());
+                message.setGravity(17);
+
+                message.setText(qa.getMessage());
+                layout.addView(message, idx);
+            }
+
+
+
             if(gState.isGameOver()){
-                Intent intent = new Intent(v.getContext(), GameOverActivity.class);
+                final Intent intent = new Intent(v.getContext(), GameOverActivity.class);
                 intent.putExtra("QUESTIONS", gState.getAllQuestions());
-                startActivity(intent);
+
+                if(!comment){
+                    startActivity(intent);
+                    return;
+                }
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        startActivity(intent);
+                    }
+                }, COMMENT_WAIT_TIME);
             }
             else{
-                Intent intent = new Intent(v.getContext(), QuestionActivity.class);
+                final Intent intent = new Intent(v.getContext(), QuestionActivity.class);
                 intent.putExtra("GAME_STATE", gState);
-                startActivity(intent);
+
+                if(!comment){
+                    startActivity(intent);
+                    return;
+                }
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        startActivity(intent);
+                    }
+                }, COMMENT_WAIT_TIME);
             }
         }
     }
