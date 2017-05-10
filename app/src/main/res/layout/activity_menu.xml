@@ -2,21 +2,15 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:screenOrientation="portrait"
+    android:configChanges="keyboardHidden|orientation|screenSize"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="godotinc.epflsurvival.MenuActivity">
 
-    <ImageView
-        android:id="@+id/background"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@android:color/background_light"
-        tools:layout_editor_absoluteY="0dp"
-        tools:layout_editor_absoluteX="0dp" />
-
     <LinearLayout
-        android:layout_width="368dp"
-        android:layout_height="551dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -40,19 +34,38 @@
             android:text="Nouvelle partie" />
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/buttonInstructions"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Instructions" />
 
-        <Button
-            android:id="@+id/button5"
+        <ScrollView
+            android:id="@+id/scrollViewInstructions"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Paramètres" />
+            android:clipToPadding="false"
+            android:fillViewport="false"
+            android:scrollbarStyle="insideInset"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewInstr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dans ce jeu tu incarnes un étudiant débordant de motivation qui débute l’EPFL. Le but est de te frayer un chemin à travers les cours, examens, TPs, soirées, etc., et de réussir avec succès (ou disons simplement survivre) ta première année.\n \n Tu seras confronté(e) à diverses péripéties ou situations sous forme de dilemmes. Ton avatar possède 4 jauges (Académique, Santé, Finance et Social) qui font office de points de vie influencés par tes choix. Ta partie sera terminée et ton année ratée si tes jauges atteignent un niveau critique. Si au contraire tu auras fait les bons choix, ton diplôme sera en poche!\n \n Bonne chance!"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </ScrollView>
 
         <Button
-            android:id="@+id/button6"
+            android:id="@+id/buttonAbout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="A propos" />
