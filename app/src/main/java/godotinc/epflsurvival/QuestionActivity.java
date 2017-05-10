@@ -43,6 +43,11 @@ public class QuestionActivity extends AppCompatActivity {
         ProgressBar barAcademic = (ProgressBar) findViewById(R.id.barAcademic);
             barAcademic.setProgress(gameState.getAcademics());
 
+        ((TextView) findViewById(R.id.textView2)).setVisibility(View.INVISIBLE);
+        ((TextView) findViewById(R.id.textView3)).setVisibility(View.INVISIBLE);
+        ((TextView) findViewById(R.id.textView4)).setVisibility(View.INVISIBLE);
+        ((TextView) findViewById(R.id.textView5)).setVisibility(View.INVISIBLE);
+
         //Setup question
         try{
             q = gameState.getRandomQuestion();
@@ -98,12 +103,43 @@ public class QuestionActivity extends AppCompatActivity {
             this.gState = gState;
         }
 
+        private String diffToString(int diff){
+            String toReturn = Integer.toString(diff);
+            if(diff==0){
+                return "";
+            }
+            else if(diff > 0){
+                toReturn = "+" + toReturn;
+            }
+            return toReturn;
+        }
+
         @Override
         public void onClick(View v){
-            gState.addAcademics(qa.getAcademics());
-            gState.addSocial(qa.getSocial());
-            gState.addFinances(qa.getFinances());
-            gState.addHealth(qa.getHealth());
+
+            int diffAcademics = qa.getAcademics();
+            int diffSocial = qa.getSocial();
+            int diffFinances = qa.getFinances();
+            int diffHealth = qa.getHealth();
+
+            gState.addAcademics(diffAcademics);
+            gState.addSocial(diffSocial);
+            gState.addFinances(diffFinances);
+            gState.addHealth(diffHealth);
+
+
+
+            ((TextView) findViewById(R.id.textView2)).setText(diffToString(diffFinances));
+            ((TextView) findViewById(R.id.textView3)).setText(diffToString(diffSocial));
+            ((TextView) findViewById(R.id.textView4)).setText(diffToString(diffAcademics));
+            ((TextView) findViewById(R.id.textView5)).setText(diffToString(diffHealth));
+
+            ((TextView) findViewById(R.id.textView2)).setVisibility(View.VISIBLE);
+            ((TextView) findViewById(R.id.textView3)).setVisibility(View.VISIBLE);
+            ((TextView) findViewById(R.id.textView4)).setVisibility(View.VISIBLE);
+            ((TextView) findViewById(R.id.textView5)).setVisibility(View.VISIBLE);
+
+
 
             boolean comment = qa.getMessage().length() > 0;
             if(comment){
