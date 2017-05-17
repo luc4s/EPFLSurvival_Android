@@ -4,45 +4,58 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:screenOrientation="portrait"
     android:configChanges="keyboardHidden|orientation|screenSize"
+    android:background="@android:color/white"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="godotinc.epflsurvival.MenuActivity">
 
     <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="370dp"
+        android:layout_height="162dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="8dp"
-        android:layout_marginRight="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        tools:layout_editor_absoluteY="365dp">
 
         <Button
             android:id="@+id/buttonContinuer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/buttonshape"
             android:text="Continuer"
-            android:visibility="gone"/>
+            android:textColor="@android:color/black"
+            android:visibility="gone" />
 
         <Button
             android:id="@+id/button3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Nouvelle partie" />
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/buttonshape"
+            android:text="Nouvelle partie"
+            android:textColor="@android:color/black" />
 
         <Button
             android:id="@+id/buttonInstructions"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Instructions" />
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/buttonshape"
+            android:text="Instructions"
+            android:textColor="@android:color/black" />
 
         <ScrollView
             android:id="@+id/scrollViewInstructions"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
             android:clipToPadding="false"
             android:fillViewport="false"
             android:scrollbarStyle="insideInset"
@@ -60,6 +73,7 @@
                     android:layout_height="wrap_content"
                     android:text="Dans ce jeu tu incarnes un étudiant débordant de motivation qui débute l’EPFL. Le but est de te frayer un chemin à travers les cours, examens, TPs, soirées, etc., et de réussir avec succès (ou disons simplement survivre) ta première année.\n \n Tu seras confronté(e) à diverses péripéties ou situations sous forme de dilemmes. Ton avatar possède 4 jauges (Académique, Santé, Finance et Social) qui font office de points de vie influencés par tes choix. Ta partie sera terminée et ton année ratée si tes jauges atteignent un niveau critique. Si au contraire tu auras fait les bons choix, ton diplôme sera en poche!\n \n Bonne chance!"
                     android:textAlignment="center"
+                    android:textColor="@android:color/black"
                     android:textSize="18sp" />
             </LinearLayout>
         </ScrollView>
@@ -68,6 +82,8 @@
             android:id="@+id/buttonAbout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="A propos" />
+            android:background="@drawable/buttonshape"
+            android:text="A propos"
+            android:textColor="@android:color/black" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
