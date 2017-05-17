@@ -1,12 +1,15 @@
 package godotinc.epflsurvival;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.GridLayout;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
@@ -157,43 +160,13 @@ public class QuestionActivity extends AppCompatActivity {
                 message.setWidth(v.getWidth());
                 message.setHeight(v.getHeight());
                 message.setGravity(17);
+                message.setTextColor(Color.BLACK);
 
                 message.setText(qa.getMessage());
                 layout.addView(message, idx);
             }
 
-
-
-            if(gState.isGameOver()){
-                final Intent intent = new Intent(v.getContext(), GameOverActivity.class);
-                intent.putExtra("QUESTIONS", gState.getAllQuestions());
-
-                if(!comment){
-                    startActivity(intent);
-                    return;
-                }
-                new Handler().postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        startActivity(intent);
-                    }
-                }, COMMENT_WAIT_TIME);
-            }
-            else{
-                final Intent intent = new Intent(v.getContext(), QuestionActivity.class);
-                intent.putExtra("GAME_STATE", gState);
-
-                if(!comment){
-                    startActivity(intent);
-                    return;
-                }
-                new Handler().postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        startActivity(intent);
-                    }
-                }, COMMENT_WAIT_TIME);
-            }
+            ((CheckBox) findViewById(R.id.questionAnswered)).setChecked(true);
         }
     }
 
@@ -202,5 +175,25 @@ public class QuestionActivity extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(), MenuActivity.class);
         intent.putExtra("GAME_STATE", gameState);
         startActivity(intent);
+    }
+
+    @Override
+    public boolean onTouchEvent(MotionEvent e){
+        if(!((CheckBox)findViewById(R.id.questionAnswered)).isChecked())
+            return true;
+
+        Intent intent;
+        if(gameState.isGameOver()){
+            intent = new Intent(getApplicationContext(), GameOverActivity.class);
+            intent.putExtra("QUESTIONS", gameState.getAllQuestions());
+
+        }
+        else{
+            intent = new Intent(getApplicationContext(), QuestionActivity.class);
+            intent.putExtra("GAME_STATE", gameState);
+        }
+
+        startActivity(intent);
+        return true;
     }
 }
