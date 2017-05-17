@@ -103,10 +103,10 @@ public class SplashScreen extends AppCompatActivity {
                     qBuilder.addAnswer(answer.getString("answer"),
                                         answer.getString("suite"),
                                         message,
-                                        changes.getInt("academics"),
-                                        changes.getInt("social"),
                                         changes.getInt("health"),
-                                        changes.getInt("finances"));
+                                        changes.getInt("social"),
+                                        changes.getInt("finances"),
+                                        changes.getInt("academics"));
                 }
                 questions.add(qBuilder.build());
             }
