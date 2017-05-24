@@ -2,24 +2,220 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:screenOrientation="portrait"
-    android:configChanges="keyboardHidden|orientation|screenSize"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:configChanges="keyboardHidden|orientation|screenSize"
+    android:screenOrientation="portrait"
     tools:context="godotinc.epflsurvival.GameOverActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Il y a HES pour les gens comme toi..."
-        android:textAlignment="center"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_marginBottom="8dp"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent"
         android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/logo2" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonshape"
+            android:padding="10dp"
+            android:text="T'es mauvais..."
+            android:textColor="@android:color/black" />
+
+        <GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:columnCount="7"
+            android:rowCount="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageViewFinances"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:layout_row="0"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/finances" />
+
+                <ProgressBar
+                    android:id="@+id/barFinances"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:layout_row="1"
+                    android:layout_weight="1"
+                    android:indeterminate="false" />
+
+                <TextView
+                    android:id="@+id/twF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="+0"
+                    android:textColor="@android:color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageViewSocial"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_row="0"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="false"
+                    app:srcCompat="@drawable/social" />
+
+                <ProgressBar
+                    android:id="@+id/barSocial"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_row="1"
+                    android:layout_weight="1.01"
+                    android:indeterminate="false" />
+
+                <TextView
+                    android:id="@+id/twS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.01"
+                    android:gravity="center_horizontal"
+                    android:text="+0"
+                    android:textColor="@android:color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageViewAcademic"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_row="0"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/academic" />
+
+                <ProgressBar
+                    android:id="@+id/barAcademic"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_row="1"
+                    android:layout_weight="1"
+                    android:indeterminate="false" />
+
+                <TextView
+                    android:id="@+id/twA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="+0"
+                    android:textColor="@android:color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageViewHealth"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/health" />
+
+                <ProgressBar
+                    android:id="@+id/barHealth"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_row="1"
+                    android:layout_weight="1"
+                    android:indeterminate="false" />
+
+                <TextView
+                    android:id="@+id/twH"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="+0"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+        </GridLayout>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/arcades_parking_a_velos" />
+
+        <TextView
+            android:id="@+id/textViewScrolling"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Appuyez n'importe où pour continuer..."
+            android:textAlignment="center"
+            android:scrollHorizontally="true"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:lines="1"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:textColor="@android:color/black" />
+
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>
