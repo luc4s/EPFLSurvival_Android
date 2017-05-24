@@ -1,3 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">EPFLSurvival</string>
+    <string name="instructions" formatted="false"><![CDATA[
+<!DOCTYPE html>
+<html>
+<meta content="text/html; charset=UTF-8" http-equiv="content-type">
+  <style>
+    body {
+      box-sizing: border-box;
+      font-family: Helvetica, sans-serif;
+      text-align: justify;
+    }
+  h2 {
+    text-align: center;
+  }
+  </style>
+<body>
+
+
+<h2>Règles du jeu</h2>
+
+<p>
+Dans ce jeu tu incarnes un étudiant débordant de motivation qui débute l’EPFL. Le but est de te frayer un chemin à travers les cours, examens, TPs, soirées, etc., et de réussir avec succès (ou disons simplement survivre) ta première année.
+
+Tu seras confronté(e) à diverses péripéties ou situations sous forme de dilemmes. Ton avatar possède 4 jauges (Finances, Santé, Académique et Social) qui font office de points de vie influencés par tes choix. Ta partie sera terminée et ton année ratée si tes jauges atteignent un niveau critique. Si au contraire tu auras fait les bons choix, ton diplôme sera en poche!
+
+Bonne chance!
+</p>
+
+</body>
+</html>
+    ]]></string>
+    <string name="about" formatted="false"><![CDATA[
+<!DOCTYPE html>
+<html>
+<meta content="text/html; charset=UTF-8" http-equiv="content-type">
+<style>
+    body {
+        box-sizing: border-box;
+        font-family: Helvetica, sans-serif;
+        font-size: 14px;
+    }
+    h2 {
+        text-align: center;
+    }
+    .alpha {
+        float: left;
+        width: 50%;
+        text-align: center;
+    }
+    .omega {
+        width: 50%;
+        float: left;
+        text-align: center;
+    }
+</style>
+<body>
+<h2>A propos</h2>
+<div class="alpha">
+    <h3>Créateurs</h3>
+    Benjamin Schloesing <br>
+    Gregoire Repond <br>
+    Sakura Nussbaum <br>
+    Ella Charlaix <br>
+    Amanda Klaeger <br>
+    Alix Dupire <br>
+    Loïc Chobaz <br>
+    Stephan Mühlberg <br>
+    Dorian Herle <br>
+    Arabelle de Saussure <br>
+    Malvina Pauchard <br>
+    Emile Décosterd <br>
+    Lucas Monnin <br>
+    Guilllaume Raille <br>
+    Luca Rizzello <br>
+    John Stevenson <br>
+    Björn Andersson <br>
+    Alexandre Zeenny <br>
+    Arthur Sauvin <br>
+    Louis Duvigneau <br>
+    Pol Banz
+
+</div>
+<div class="omega">
+    <h3>Icône Jauges:</h3>
+    http://www.flaticon.com<br>
+    <br>
+
+    <h3>Images:</h3>
+    Faites par les créateurs<br>
+    https://www.pexels.com<br>
+    <br>
+
+    <h3>Logo:</h3>
+    Fait par les créateurs
+</div>
+</body>
+</html>
+]]></string>
 </resources>

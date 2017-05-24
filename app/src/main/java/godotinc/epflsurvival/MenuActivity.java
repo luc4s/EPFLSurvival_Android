@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
+import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
@@ -56,8 +57,9 @@ public class MenuActivity extends AppCompatActivity {
 
         Button buttonInstr = (Button) findViewById(R.id.buttonInstructions);
         final ScrollView instrView = (ScrollView)findViewById(R.id.scrollViewInstructions);
+        final ScrollView aboutView = (ScrollView)findViewById(R.id.scrollViewAbout);
 
-        buttonInstr.setOnClickListener(new Button.OnClickListener() {
+        Button.OnClickListener instrListener = new Button.OnClickListener() {
             public void onClick(View v) {
                 LinearLayout layout = (LinearLayout)findViewById(R.id.linearLayout1);
                 if(instrView.getVisibility() == instrView.VISIBLE){
@@ -67,9 +69,33 @@ public class MenuActivity extends AppCompatActivity {
                 else {
                     layout.setGravity(Gravity.TOP);
                     instrView.setVisibility(View.VISIBLE);
+                    aboutView.setVisibility(View.GONE);
                 }
             }
-        });
+        };
+        buttonInstr.setOnClickListener(instrListener);
+        ((WebView)findViewById(R.id.webviewInstr)).setOnClickListener(instrListener);
+
+        Button buttonAbout = (Button) findViewById(R.id.buttonAbout);
+
+        Button.OnClickListener listener = new Button.OnClickListener(){
+            public void onClick(View v) {
+                LinearLayout layout = (LinearLayout)findViewById(R.id.linearLayout1);
+
+                if(aboutView.getVisibility() == aboutView.VISIBLE){
+                    layout.setGravity(Gravity.CENTER_VERTICAL);
+                    aboutView.setVisibility(View.GONE);
+                }
+                else {
+                    layout.setGravity(Gravity.TOP);
+                    aboutView.setVisibility(View.VISIBLE);
+                    instrView.setVisibility(View.GONE);
+                }
+            }
+        };
+        buttonAbout.setOnClickListener(listener);
+        ((WebView)findViewById(R.id.webview)).loadData(getString(R.string.about), "text/html; charset=utf-8", null);
+        ((WebView)findViewById(R.id.webviewInstr)).loadData(getString(R.string.instructions), "text/html; charset=utf-8", null);
     }
 
 
