@@ -1,6 +1,7 @@
 package godotinc.epflsurvival;
 
 import android.content.Intent;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -28,8 +29,18 @@ public class SplashScreen extends AppCompatActivity {
 
         questions = new ArrayList<>();
         loadCards();
+
+        (new Handler()).postDelayed(new Runnable(){
+            @Override
+            public void run(){
+                Intent intent = new Intent(getApplicationContext(), MenuActivity.class);
+                intent.putExtra("QUESTIONS", questions);
+                startActivity(intent);
+            }
+        }, 1000);
     }
 
+    /*
     @Override
     public boolean onTouchEvent(MotionEvent e){
         Intent intent = new Intent(getApplicationContext(), MenuActivity.class);
@@ -37,6 +48,7 @@ public class SplashScreen extends AppCompatActivity {
         startActivity(intent);
         return true;
     }
+    */
 
     private void loadCards(){
         InputStream inputStream = getApplicationContext().getResources().openRawResource(resId);

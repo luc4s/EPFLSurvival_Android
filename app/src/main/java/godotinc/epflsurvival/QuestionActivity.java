@@ -64,14 +64,18 @@ public class QuestionActivity extends AppCompatActivity {
 
         ImageView image = (ImageView) findViewById(R.id.imageView7);
         String imageName = q.getImage();
+
         String[] parts = imageName.split("\\.");
         if(parts.length>0){
             imageName = parts[0];
         }
         //String imageName = "amphi_ce"; //marche
-        System.out.println(imageName);
+        //System.out.println(imageName);
         int drawableID = getResources().getIdentifier(imageName, "drawable", getPackageName());
-        System.out.println(drawableID);
+        if(drawableID == 0){
+            drawableID = getResources().getIdentifier("logo2", "drawable", getPackageName());
+        }
+        //System.out.println(drawableID);
         image.setImageResource(drawableID);
 
         TextView questionText = (TextView) findViewById(R.id.questionText);
@@ -88,7 +92,11 @@ public class QuestionActivity extends AppCompatActivity {
         int i;
         for(i = 0;i < q.getAnswersCount();i++){
             buttons[i].setText(qAnswers[i].getText());
-            buttons[i].setTextSize(10);
+            buttons[i].setTextSize(18);
+            if(qAnswers[i].getText().length() > 100)
+                buttons[i].setTextSize(16);
+            else if(qAnswers[i].getText().length() > 150)
+                buttons[i].setTextSize(14);
 
             buttons[i].setOnClickListener(new QuestionAnswerListener(gameState, qAnswers[i]));
         }
