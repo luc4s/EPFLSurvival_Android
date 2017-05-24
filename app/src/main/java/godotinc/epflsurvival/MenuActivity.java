@@ -3,8 +3,10 @@ package godotinc.epflsurvival;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
@@ -57,11 +59,20 @@ public class MenuActivity extends AppCompatActivity {
 
         buttonInstr.setOnClickListener(new Button.OnClickListener() {
             public void onClick(View v) {
-                if(instrView.getVisibility() == instrView.VISIBLE)
+                LinearLayout layout = (LinearLayout)findViewById(R.id.linearLayout1);
+                if(instrView.getVisibility() == instrView.VISIBLE){
+                    layout.setGravity(Gravity.CENTER_VERTICAL);
                     instrView.setVisibility(View.GONE);
-                else
+                }
+                else {
+                    layout.setGravity(Gravity.TOP);
                     instrView.setVisibility(View.VISIBLE);
+                }
             }
         });
     }
+
+
+    @Override
+    public void onBackPressed() {}
 }

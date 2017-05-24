@@ -71,4 +71,8 @@ public class GameOverActivity extends AppCompatActivity {
         startActivity(intent);
         return true;
     }
+
+
+    @Override
+    public void onBackPressed() {}
 }
