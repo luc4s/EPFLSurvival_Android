@@ -45,6 +45,8 @@ public class QuestionActivity extends AppCompatActivity {
             barFinances.setProgress(gameState.getFinances());
         ProgressBar barAcademic = (ProgressBar) findViewById(R.id.barAcademic);
             barAcademic.setProgress(gameState.getAcademics());
+        ProgressBar progressBar = (ProgressBar) findViewById(R.id.progressBar);
+            progressBar.setProgress(gameState.getDate() * (100/30));
 
         ((TextView) findViewById(R.id.textView2)).setVisibility(View.INVISIBLE);
         ((TextView) findViewById(R.id.textView3)).setVisibility(View.INVISIBLE);
@@ -133,10 +135,10 @@ public class QuestionActivity extends AppCompatActivity {
             int diffFinances = qa.getFinances();
             int diffHealth = qa.getHealth();
 
-            diffAcademics *= 1000;
-            diffSocial *= 1000;
-            diffAcademics *= 100;
-            diffHealth *= 100;
+            //diffAcademics *= 1000;
+            //diffSocial *= 1000;
+            //diffAcademics *= 100;
+            //diffHealth *= 100;
 
             gState.addAcademics(diffAcademics);
             gState.addSocial(diffSocial);
