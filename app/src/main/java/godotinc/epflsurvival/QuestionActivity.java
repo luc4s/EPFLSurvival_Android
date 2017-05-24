@@ -133,6 +133,11 @@ public class QuestionActivity extends AppCompatActivity {
             int diffFinances = qa.getFinances();
             int diffHealth = qa.getHealth();
 
+            diffAcademics *= 1000;
+            diffSocial *= 1000;
+            diffAcademics *= 100;
+            diffHealth *= 100;
+
             gState.addAcademics(diffAcademics);
             gState.addSocial(diffSocial);
             gState.addFinances(diffFinances);
@@ -193,8 +198,19 @@ public class QuestionActivity extends AppCompatActivity {
         Intent intent;
         if(gameState.isGameOver()){
             intent = new Intent(getApplicationContext(), GameOverActivity.class);
-            intent.putExtra("QUESTIONS", gameState.getAllQuestions());
+            intent.putExtra("GAME_STATE", gameState);
 
+            int goType = 0;
+            if(gameState.getAcademics() < 1)
+                goType = 1;
+            if(gameState.getFinances() < 1)
+                goType = 2;
+            if(gameState.getHealth() < 1)
+                goType = 3;
+            if(gameState.getSocial() < 1)
+                goType = 4;
+
+            intent.putExtra("GAME_OVER_TYPE", goType);
         }
         else{
             intent = new Intent(getApplicationContext(), QuestionActivity.class);

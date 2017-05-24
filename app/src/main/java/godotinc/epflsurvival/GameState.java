@@ -10,7 +10,7 @@ import java.util.ArrayList;
 public class GameState implements Serializable {
     private static final long serialVersionUID = 7526472295622776247L;
 
-    private static final int CARDS_PER_GAME = 100;
+    private static final int CARDS_PER_GAME = 30;
     private static final int PERIODS_COUNT = 11;
 
     private int academics,
@@ -66,7 +66,7 @@ public class GameState implements Serializable {
         return !(academics > 0 &&
                 health > 0 &&
                 finances > 0 &&
-                social > 0);
+                social > 0) || date >= CARDS_PER_GAME;
     }
     public int getAcademics() {
         return academics;

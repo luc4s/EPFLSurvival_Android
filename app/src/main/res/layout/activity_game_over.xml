@@ -13,16 +13,18 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp">
+        app:layout_constraintVertical_bias="0.0">
 
         <ImageView
             android:id="@+id/imageView2"
@@ -77,7 +79,7 @@
                     android:indeterminate="false" />
 
                 <TextView
-                    android:id="@+id/twF"
+                    android:id="@+id/textViewF"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -114,7 +116,7 @@
                     android:indeterminate="false" />
 
                 <TextView
-                    android:id="@+id/twS"
+                    android:id="@+id/textviewS"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.01"
@@ -151,7 +153,7 @@
                     android:indeterminate="false" />
 
                 <TextView
-                    android:id="@+id/twA"
+                    android:id="@+id/textviewA"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -186,7 +188,7 @@
                     android:indeterminate="false" />
 
                 <TextView
-                    android:id="@+id/twH"
+                    android:id="@+id/textviewH"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -201,20 +203,21 @@
             android:id="@+id/imageView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/arcades_parking_a_velos" />
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/go_health" />
 
         <TextView
             android:id="@+id/textViewScrolling"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Appuyez n'importe où pour continuer..."
-            android:textAlignment="center"
-            android:scrollHorizontally="true"
             android:ellipsize="marquee"
             android:fadingEdge="horizontal"
             android:lines="1"
             android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
             android:singleLine="true"
+            android:text="Appuyez n'importe où pour continuer..."
+            android:textAlignment="center"
             android:textColor="@android:color/black" />
 
     </LinearLayout>
