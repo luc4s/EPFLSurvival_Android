@@ -40,7 +40,7 @@ public class GameOverActivity extends AppCompatActivity {
                 img = "go_aca";
                 break;
             case 2: //finances
-                msg = "Endetté jusqu’au cou, tu dois abandonner tes études afin de de prendre 2 jobs à 100% pour t’en sortir.";
+                msg = "Endetté(e) jusqu’au cou, tu dois abandonner tes études afin de de prendre 2 jobs à 100% pour t’en sortir.";
                 img = "go_fin";
                 break;
             case 3://health
@@ -48,7 +48,7 @@ public class GameOverActivity extends AppCompatActivity {
                 img = "go_health";
                 break;
             case 4://social
-                msg = "A force d’être isolé, tu pars en dépression clinque et n’arrives plus à te concentrer sur tes études.";
+                msg = "A force d’être isolé(e), tu pars en dépression clinque et n’arrives plus à te concentrer sur tes études.";
                 img = "go_social";
                 break;
             default:
