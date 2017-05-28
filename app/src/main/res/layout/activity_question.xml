@@ -55,7 +55,9 @@
                 android:layout_column="3"
                 android:layout_row="1"
                 android:layout_weight="1"
-                android:indeterminate="false" />
+                android:indeterminate="false"
+                android:progressBackgroundTint="@android:color/holo_blue_bright"
+                android:progressTint="@android:color/holo_blue_dark" />
 
             <TextView
                 android:id="@+id/textView2"
@@ -92,7 +94,9 @@
                 android:layout_column="2"
                 android:layout_row="1"
                 android:layout_weight="1.01"
-                android:indeterminate="false" />
+                android:indeterminate="false"
+                android:progressBackgroundTint="@android:color/holo_blue_bright"
+                android:progressTint="@android:color/holo_blue_dark" />
 
             <TextView
                 android:id="@+id/textView3"
@@ -128,7 +132,9 @@
                 android:layout_column="1"
                 android:layout_row="1"
                 android:layout_weight="1"
-                android:indeterminate="false" />
+                android:indeterminate="false"
+                android:progressBackgroundTint="@android:color/holo_blue_bright"
+                android:progressTint="@android:color/holo_blue_dark" />
 
             <TextView
                 android:id="@+id/textView4"
@@ -162,7 +168,9 @@
                 android:layout_column="0"
                 android:layout_row="1"
                 android:layout_weight="1"
-                android:indeterminate="false" />
+                android:indeterminate="false"
+                android:progressBackgroundTint="@android:color/holo_blue_bright"
+                android:progressTint="@android:color/holo_blue_dark" />
 
             <TextView
                 android:id="@+id/textView5"
