@@ -48,7 +48,7 @@ public class GameOverActivity extends AppCompatActivity {
                 img = "go_health";
                 break;
             case 4://social
-                msg = "Tu es un cas social, tu devrait sortir un peu...";
+                msg = "Tu es un cas social, tu devrais sortir un peu...";
                 img = "go_social";
                 break;
             default:

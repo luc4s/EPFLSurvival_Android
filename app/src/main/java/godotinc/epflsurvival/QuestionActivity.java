@@ -1,5 +1,6 @@
 package godotinc.epflsurvival;
 
+import android.animation.ObjectAnimator;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Handler;
@@ -58,7 +59,7 @@ public class QuestionActivity extends AppCompatActivity {
         try{
             MyApp appState = ((MyApp)getApplicationContext());
 
-             q = appState.randomQuestion(gameState.getHealth(), gameState.getSocial(), gameState.getFinances(), gameState.getAcademics(), gameState.getNextQuestionTag(), gameState.getDate(), gameState.getCurrentPeriod());
+             q = appState.randomQuestion(gameState.getHealth(), gameState.getSocial(), gameState.getFinances(), gameState.getAcademics(), gameState.getNextQuestionTag(), gameState.getDateAndInc(), gameState.getCurrentPeriod());
         }
         catch(Exception e){
             Intent intent = new Intent(getApplicationContext(), MenuActivity.class);
@@ -153,6 +154,33 @@ public class QuestionActivity extends AppCompatActivity {
             ((TextView) findViewById(R.id.textView3)).setText(diffToString(diffSocial));
             ((TextView) findViewById(R.id.textView4)).setText(diffToString(diffAcademics));
             ((TextView) findViewById(R.id.textView5)).setText(diffToString(diffHealth));
+
+
+
+            ProgressBar barHealth = (ProgressBar) findViewById(R.id.barHealth);
+            ProgressBarAnimation anim = new ProgressBarAnimation(barHealth, gameState.getHealth()-diffHealth, gameState.getHealth());
+            anim.setDuration(1000);
+            barHealth.startAnimation(anim);
+
+            ProgressBar barAcademic = (ProgressBar) findViewById(R.id.barAcademic);
+            anim = new ProgressBarAnimation(barAcademic, gameState.getAcademics()-diffAcademics, gameState.getAcademics());
+            anim.setDuration(1000);
+            barAcademic.startAnimation(anim);
+
+            ProgressBar barFinances = (ProgressBar) findViewById(R.id.barFinances);
+            anim = new ProgressBarAnimation(barFinances, gameState.getFinances()-diffFinances, gameState.getFinances());
+            anim.setDuration(1000);
+            barFinances.startAnimation(anim);
+
+            ProgressBar barSocial = (ProgressBar) findViewById(R.id.barSocial);
+            anim = new ProgressBarAnimation(barSocial, gameState.getSocial()-diffSocial, gameState.getSocial());
+            anim.setDuration(1000);
+            barSocial.startAnimation(anim);
+
+            ProgressBar day = (ProgressBar) findViewById(R.id.progressBar);
+            anim = new ProgressBarAnimation(day, (gameState.getDate()-1) * (100/30), gameState.getDate() * (100/30));
+            anim.setDuration(500);
+            day.startAnimation(anim);
 
             ((TextView) findViewById(R.id.textView2)).setVisibility(View.VISIBLE);
             ((TextView) findViewById(R.id.textView3)).setVisibility(View.VISIBLE);

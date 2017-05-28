@@ -1,5 +1,7 @@
 package godotinc.epflsurvival;
 
+import android.util.Log;
+
 import java.io.File;
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -82,6 +84,10 @@ public class GameState implements Serializable {
     }
 
     public int getDate() {
+        return date;
+    }
+
+    public int getDateAndInc(){
         return date++;
     }
 
