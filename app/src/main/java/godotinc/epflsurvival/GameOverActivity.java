@@ -40,15 +40,15 @@ public class GameOverActivity extends AppCompatActivity {
                 img = "go_aca";
                 break;
             case 2: //finances
-                msg = "Il va falloir apprendre à gérer ton portefeuille...";
+                msg = "Endetté jusqu’au cou, tu dois abandonner tes études afin de de prendre 2 jobs à 100% pour t’en sortir.";
                 img = "go_fin";
                 break;
             case 3://health
-                msg = "Il faudra penser à faire un peu plus de sport et à dormir la nuit...";
+                msg = "Ton état de santé est tellement bas que tu fais une attaque en plein examen final et t’effondres. Le prof refuse de croire que c’était pour de vrai et te colle un 0, rendant la branche impossible à rattraper.";
                 img = "go_health";
                 break;
             case 4://social
-                msg = "Tu es un cas social, tu devrais sortir un peu...";
+                msg = "A force d’être isolé, tu pars en dépression clinque et n’arrives plus à te concentrer sur tes études.";
                 img = "go_social";
                 break;
             default:

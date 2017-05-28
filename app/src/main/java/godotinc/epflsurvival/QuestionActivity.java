@@ -138,10 +138,10 @@ public class QuestionActivity extends AppCompatActivity {
             int diffFinances = qa.getFinances();
             int diffHealth = qa.getHealth();
 
-            //diffAcademics *= 1000;
-            //diffSocial *= 1000;
-            //diffAcademics *= 100;
-            //diffHealth *= 100;
+            diffAcademics *= 1000;
+            diffSocial *= 1000;
+            diffAcademics *= 100;
+            diffHealth *= 100;
 
             gState.addAcademics(diffAcademics);
             gState.addSocial(diffSocial);
