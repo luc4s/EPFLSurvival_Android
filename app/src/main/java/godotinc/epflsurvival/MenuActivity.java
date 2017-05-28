@@ -21,13 +21,11 @@ public class MenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
-        ArrayList<Question> questions;
         if(getIntent().hasExtra("GAME_STATE")){
             savedGameState = (GameState)getIntent().getSerializableExtra("GAME_STATE");
 
             Button buttonContinue = (Button) findViewById(R.id.buttonContinuer);
             buttonContinue.setVisibility(View.VISIBLE);
-            questions = savedGameState.getAllQuestions();
 
 
             final Intent intent = new Intent(getApplicationContext(), QuestionActivity.class);
@@ -39,11 +37,8 @@ public class MenuActivity extends AppCompatActivity {
                 }
             });
         }
-        else{
-            questions = (ArrayList<Question>)getIntent().getSerializableExtra("QUESTIONS");
-        }
 
-        GameState gameState = new GameState(questions, 50, 50, 50, 50, 0);
+        GameState gameState = new GameState(50, 50, 50, 50, 0);
 
         final Intent intent = new Intent(getApplicationContext(), QuestionActivity.class);
         intent.putExtra("GAME_STATE", gameState);

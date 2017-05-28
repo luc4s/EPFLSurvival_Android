@@ -1,5 +1,6 @@
 package godotinc.epflsurvival;
 
+import java.io.File;
 import java.io.Serializable;
 import java.util.ArrayList;
 
@@ -34,30 +35,17 @@ public class GameState implements Serializable {
      */
     private int currentPeriod;
     private String nextQuestionTag;
-    private QuestionsManager qMgr;
-    private ArrayList<Question> questions;
     private int date;
 
 
-    public GameState(ArrayList<Question> questions, int academics, int health, int finances, int social, int date){
+    public GameState(int academics, int health, int finances, int social, int date){
         this.academics = academics;
         this.health = health;
         this.finances = finances;
         this.social = social;
 
         this.date = date;
-        this.questions = questions;
-        qMgr = new QuestionsManager(questions);
         currentPeriod = 0;
-    }
-
-    public ArrayList<Question> getAllQuestions(){
-        return questions;
-    }
-
-    public Question getRandomQuestion(){
-        currentPeriod = date / (CARDS_PER_GAME / PERIODS_COUNT);
-        return qMgr.randomQuestion(health, social, finances, academics, nextQuestionTag, date++, currentPeriod);
     }
 
     public void setNextQuestionTag(String tag){ nextQuestionTag = tag; }
@@ -68,6 +56,15 @@ public class GameState implements Serializable {
                 finances > 0 &&
                 social > 0) || date >= CARDS_PER_GAME;
     }
+
+    public int getCurrentPeriod(){
+        return date / (CARDS_PER_GAME / PERIODS_COUNT);
+    }
+
+    public String getNextQuestionTag(){
+        return nextQuestionTag;
+    }
+
     public int getAcademics() {
         return academics;
     }
@@ -85,7 +82,7 @@ public class GameState implements Serializable {
     }
 
     public int getDate() {
-        return date;
+        return date++;
     }
 
     public void addAcademics(int academics) {

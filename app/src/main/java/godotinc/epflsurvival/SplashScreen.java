@@ -34,10 +34,12 @@ public class SplashScreen extends AppCompatActivity {
             @Override
             public void run(){
                 Intent intent = new Intent(getApplicationContext(), MenuActivity.class);
-                intent.putExtra("QUESTIONS", questions);
                 startActivity(intent);
             }
         }, 1000);
+
+        MyApp appState = ((MyApp)getApplicationContext());
+        appState.setQuestions(questions);
     }
 
     /*
@@ -126,5 +128,7 @@ public class SplashScreen extends AppCompatActivity {
         catch (JSONException e){
             throw new RuntimeException("Malformed JSON");
         }
+
+
     }
 }

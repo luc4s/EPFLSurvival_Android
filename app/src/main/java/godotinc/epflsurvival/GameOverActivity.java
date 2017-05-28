@@ -52,7 +52,7 @@ public class GameOverActivity extends AppCompatActivity {
                 img = "go_social";
                 break;
             default:
-                msg = "Félicitations ! Tu as réussi à survivre à ta première année à l’EPFL ! Prêt à attaquer la suite …?";
+                msg = "Félicitations ! Tu as réussi à survivre à ta première année à l’EPFL ! Prêt à attaquer la suite?";
                 img = "go_win";
         }
 
@@ -66,8 +66,6 @@ public class GameOverActivity extends AppCompatActivity {
     @Override
     public boolean onTouchEvent(MotionEvent e){
         Intent intent = new Intent(getApplicationContext(), MenuActivity.class);
-        GameState gameState = (GameState) getIntent().getSerializableExtra("GAME_STATE");
-        intent.putExtra("QUESTIONS", gameState.getAllQuestions());
         startActivity(intent);
         return true;
     }

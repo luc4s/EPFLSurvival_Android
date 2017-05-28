@@ -54,12 +54,14 @@ public class QuestionActivity extends AppCompatActivity {
         ((TextView) findViewById(R.id.textView5)).setVisibility(View.INVISIBLE);
 
         //Setup question
+        Question q;
         try{
-            q = gameState.getRandomQuestion();
+            MyApp appState = ((MyApp)getApplicationContext());
+
+             q = appState.randomQuestion(gameState.getHealth(), gameState.getSocial(), gameState.getFinances(), gameState.getAcademics(), gameState.getNextQuestionTag(), gameState.getDate(), gameState.getCurrentPeriod());
         }
         catch(Exception e){
             Intent intent = new Intent(getApplicationContext(), MenuActivity.class);
-            intent.putExtra("QUESTIONS", gameState.getAllQuestions());
             startActivity(intent);
             return;
         }
@@ -213,6 +215,7 @@ public class QuestionActivity extends AppCompatActivity {
                 goType = 4;
 
             intent.putExtra("GAME_OVER_TYPE", goType);
+            ((MyApp)getApplicationContext()).reset();
         }
         else{
             intent = new Intent(getApplicationContext(), QuestionActivity.class);
