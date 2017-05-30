@@ -98,13 +98,13 @@ public class QuestionActivity extends AppCompatActivity {
         for(i = 0;i < q.getAnswersCount();i++){
             buttons[i].setText(qAnswers[i].getText());
             buttons[i].setTextSize(18);
-            if(qAnswers[i].getText().length() > 100)
+            if(qAnswers[i].getText().length() > 80)
                 buttons[i].setTextSize(16);
-            else if(qAnswers[i].getText().length() > 150)
+            if(qAnswers[i].getText().length() > 100)
                 buttons[i].setTextSize(14);
-            else if(qAnswers[i].getText().length() > 180)
+            if(qAnswers[i].getText().length() > 150)
                 buttons[i].setTextSize(12);
-            else if(qAnswers[i].getText().length() > 220)
+            if(qAnswers[i].getText().length() > 180)
                 buttons[i].setTextSize(10);
 
 
@@ -206,7 +206,21 @@ public class QuestionActivity extends AppCompatActivity {
                 message.setGravity(17);
                 message.setTextColor(Color.BLACK);
 
+
+                if(qa.getMessage().length() > 80)
+                    message.setTextSize(16);
+                if(qa.getMessage().length() > 100)
+                    message.setTextSize(14);
+                if(qa.getMessage().length() > 150)
+                    message.setTextSize(12);
+                if(qa.getMessage().length() > 180)
+                    message.setTextSize(10);
+                if(qa.getMessage().length() > 200)
+                    message.setTextSize(8);
+
+
                 message.setText(qa.getMessage());
+
                 layout.addView(message, idx);
             }
 
