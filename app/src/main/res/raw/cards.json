@@ -2961,7 +2961,7 @@
         "suite" : ""
       } ],
       "date" : -1,
-      "image" : "sg_distributeur_automatoque_panini__jus_d'orange.jpg",
+      "image" : "sg_distributeur_automatoque_panini__jus_dorange.jpg",
       "img_status" : "yes",
       "period" : -1,
       "question" : "En général, à midi tu préfères aller manger...",
@@ -4918,7 +4918,7 @@
         "suite" : ""
       } ],
       "date" : -1,
-      "image" : "Vacances_planeur_vol_plaisir.jpg",
+      "image" : "vacances_planeur_vol_plaisir.jpg",
       "img_status" : "no",
       "period" : -1,
       "question" : "Tu dois réserver ton avion pour rentrer pendant les vacances, tu...",
@@ -6656,7 +6656,7 @@
         "suite" : ""
       } ],
       "date" : -1,
-      "image" : "Vacances_planeur_vol_plaisir.jpg",
+      "image" : "vacances_planeur_vol_plaisir.jpg",
       "img_status" : "no",
       "period" : -1,
       "question" : "Tu fais un avion en papier.",
@@ -11825,7 +11825,7 @@
         "suite" : ""
       } ],
       "date" : -1,
-      "image" : "Vacances_planeur_vol_plaisir.jpg",
+      "image" : "vacances_planeur_vol_plaisir.jpg",
       "img_status" : "no",
       "period" : -1,
       "question" : "Tu as promis à ton meilleur ami d'aller le voir depuis qu'il a déménagé.",
@@ -12510,7 +12510,7 @@
         "suite" : ""
       } ],
       "date" : -1,
-      "image" : "Vacances_planeur_vol_plaisir.jpg",
+      "image" : "vacances_planeur_vol_plaisir.jpg",
       "img_status" : "no",
       "period" : 7,
       "question" : "Pour les vacances de Pâques...",
@@ -13499,7 +13499,7 @@
     },
     "-KjipRiE_q-12o39fP6U" : {
       "answers" : [ {
-        "answer" : "Adenosine Triposphate",
+        "answer" : "Adénosine Triphosphate",
         "changes" : {
           "academics" : 10,
           "finances" : 0,
@@ -14902,7 +14902,8 @@
         "suite" : ""
       } ],
       "date" : -1,
-      "image" : "",
+      "image" : "association.jpg",
+      "img_status" : "no",
       "period" : -1,
       "question" : "Ta série préférée ?",
       "ranges" : {
@@ -17673,7 +17674,7 @@
         "suite" : ""
       } ],
       "date" : -1,
-      "image" : "Vacances_planeur_vol_plaisir.jpg",
+      "image" : "vacances_planeur_vol_plaisir.jpg",
       "img_status" : "no",
       "period" : -1,
       "question" : "Ton pote a trouvé des billets pas cher pour Edimbourg pour ce weekend.",
@@ -18371,7 +18372,7 @@
         "suite" : ""
       } ],
       "date" : -1,
-      "image" : "Vacances_planeur_vol_plaisir.jpg",
+      "image" : "vacances_planeur_vol_plaisir.jpg",
       "img_status" : "no",
       "period" : -1,
       "question" : "Pendant les vacances...",
@@ -22443,7 +22444,7 @@
         "suite" : ""
       } ],
       "date" : -1,
-      "image" : "Vacances_planeur_vol_plaisir.jpg",
+      "image" : "vacances_planeur_vol_plaisir.jpg",
       "img_status" : "no",
       "period" : 5,
       "question" : "Les vacances commencent...",
@@ -24715,7 +24716,7 @@
         "suite" : ""
       } ],
       "date" : -1,
-      "image" : "sg_distributeur_automatoque_panini__jus_d'orange.jpg",
+      "image" : "sg_distributeur_automatoque_panini__jus_dorange.jpg",
       "img_status" : "no",
       "period" : -1,
       "question" : "Tu achètes un panini à la machine mais tu ne reçois ni panini ni argent en retour",
@@ -25225,7 +25226,8 @@
         "suite" : ""
       } ],
       "date" : -1,
-      "image" : "",
+      "image" : "salle_exercice.jpg",
+      "img_status" : "no",
       "period" : -1,
       "question" : "On te vole ton formulaire de physique la veille du midterm",
       "ranges" : {
@@ -25260,7 +25262,8 @@
         "suite" : ""
       } ],
       "date" : -1,
-      "image" : "",
+      "image" : "salle_exercice.jpg",
+      "img_status" : "no",
       "period" : -1,
       "question" : "Ton chien mange ta clef USB avec ton exercice noté de programmation",
       "ranges" : {
@@ -25295,7 +25298,8 @@
         "suite" : ""
       } ],
       "date" : -1,
-      "image" : "",
+      "image" : "dodo_sommeil_reveil.jpg",
+      "img_status" : "no",
       "period" : -1,
       "question" : "Tu as de tellement bons résultats que tu es détendu(e) pour tes examens. Un peu trop même, tu restes endormi(e) et ne te réveilles pas pour aller à ton premier examen",
       "ranges" : {
@@ -25330,7 +25334,8 @@
         "suite" : ""
       } ],
       "date" : -1,
-      "image" : "",
+      "image" : "salle_de_cours_amphi_dormir_ecouter_etudiants.jpg",
+      "img_status" : "no",
       "period" : -1,
       "question" : "Tu copies les réponses de ton voisin qui n'a malheureusement pas très bien révisé... Tu obtiens la magnifique note de 2.5",
       "ranges" : {
@@ -25365,7 +25370,8 @@
         "suite" : ""
       } ],
       "date" : -1,
-      "image" : "",
+      "image" : "amphi_ce.jpg",
+      "img_status" : "no",
       "period" : -1,
       "question" : "Tu as oublié d'aller à ton bonus de physique et n'obtiens donc aucun bonus pour l'examen !",
       "ranges" : {

@@ -102,6 +102,11 @@ public class QuestionActivity extends AppCompatActivity {
                 buttons[i].setTextSize(16);
             else if(qAnswers[i].getText().length() > 150)
                 buttons[i].setTextSize(14);
+            else if(qAnswers[i].getText().length() > 180)
+                buttons[i].setTextSize(12);
+            else if(qAnswers[i].getText().length() > 220)
+                buttons[i].setTextSize(10);
+
 
             buttons[i].setOnClickListener(new QuestionAnswerListener(gameState, qAnswers[i]));
         }
@@ -142,7 +147,6 @@ public class QuestionActivity extends AppCompatActivity {
             gState.addSocial(diffSocial);
             gState.addFinances(diffFinances);
             gState.addHealth(diffHealth);
-
 
 
             ((TextView) findViewById(R.id.textView2)).setText(diffToString(diffFinances));

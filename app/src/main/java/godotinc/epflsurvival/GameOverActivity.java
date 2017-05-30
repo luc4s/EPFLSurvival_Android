@@ -48,7 +48,7 @@ public class GameOverActivity extends AppCompatActivity {
                 img = "go_health";
                 break;
             case 4://social
-                msg = "A force d’être isolé(e), tu pars en dépression clinque et n’arrives plus à te concentrer sur tes études.";
+                msg = "A force d’être isolé(e), tu pars en dépression clinique et n’arrives plus à te concentrer sur tes études.";
                 img = "go_social";
                 break;
             default:
