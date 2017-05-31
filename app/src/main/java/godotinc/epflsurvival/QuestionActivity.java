@@ -222,9 +222,12 @@ public class QuestionActivity extends AppCompatActivity {
                 message.setText(qa.getMessage());
 
                 layout.addView(message, idx);
-            }
 
-            ((CheckBox) findViewById(R.id.questionAnswered)).setChecked(true);
+                ((CheckBox) findViewById(R.id.questionAnswered)).setChecked(true);
+            }
+            else
+                nextActivity();
+
         }
     }
 
@@ -239,7 +242,13 @@ public class QuestionActivity extends AppCompatActivity {
     public boolean onTouchEvent(MotionEvent e){
         if(!((CheckBox)findViewById(R.id.questionAnswered)).isChecked())
             return true;
+        else
+            nextActivity();
 
+        return true;
+    }
+
+    private void nextActivity(){
         Intent intent;
         if(gameState.isGameOver()){
             intent = new Intent(getApplicationContext(), GameOverActivity.class);
@@ -264,6 +273,5 @@ public class QuestionActivity extends AppCompatActivity {
         }
 
         startActivity(intent);
-        return true;
     }
 }
